@@ -25,7 +25,9 @@ SECRET_KEY = 'de(=nmwir5(cw%)*9mmd0ytix6m24wc732p*asu+)ujl0yu(91'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+]
 
 
 # Application definition
@@ -37,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
     'accounts.apps.AccountsConfig',
-    'django.contrib.humanize',
+    'contacts.apps.ContactsConfig',
 ]
 
 MIDDLEWARE = [
