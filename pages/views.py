@@ -28,9 +28,3 @@ def about(request):
   }
 
   return render(request, 'pages/about.html', context)
-
-
-  # sc 101215137601000017
-  # branch balaju
-  # sc/cid 251.13.022
-  # cid 2746
