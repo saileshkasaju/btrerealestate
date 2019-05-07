@@ -50,7 +50,7 @@ def login(request):
       messages.success(request, 'You are now logged in')
       return redirect('dashboard')
     else:
-      messages.ERROR(request, 'Invalid credentials')
+      messages.error(request, 'Invalid credentials')
       return redirect('login')
   return render(request, 'accounts/login.html')
 
