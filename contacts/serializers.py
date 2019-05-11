@@ -2,9 +2,8 @@ from rest_framework import serializers
 from .models import Contact
 from django.contrib.auth import authenticate
 
+
 # Contact Serializer
-
-
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
