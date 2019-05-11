@@ -10,6 +10,8 @@ psycopg2 = "*"
 psycopg2-binary = "*"
 pillow = "*"
 django = "*"
+djangorestframework = "*"
+django-rest-knox = "*"
 
 [requires]
 python_version = "3.6"
